@@ -89,6 +89,7 @@ class MirrorStatus:
     STATUS_CHECKING = "CheckUp"
     STATUS_SEEDING = "Seeding"
     STATUS_PROCESSING = "Processing"
+    STATUS_METADATA = "Metadata Adding"
 
 
 class setInterval:
