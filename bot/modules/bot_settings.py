@@ -89,6 +89,12 @@ async def load_config():
     if len(RCLONE_FLAGS) == 0:
         RCLONE_FLAGS = ''
 
+    AUTHORIZED_CHATS = environ.get('AUTHORIZED_CHATS', '')
+    if len(AUTHORIZED_CHATS) != 0:
+        aid = AUTHORIZED_CHATS.split()
+        for id_ in aid:
+            user_data[int(id_.strip())] = {'is_auth': True}
+
     EXTENSION_FILTER = environ.get('EXTENSION_FILTER', '')
     if len(EXTENSION_FILTER) > 0:
         fx = EXTENSION_FILTER.split()
@@ -304,6 +310,7 @@ async def load_config():
     config_dict.update(
         {
             'AS_DOCUMENT': AS_DOCUMENT,
+            'AUTHORIZED_CHATS': AUTHORIZED_CHATS,
             'BASE_URL': BASE_URL,
             'BOT_TOKEN': BOT_TOKEN,
             'BOT_MAX_TASKS': BOT_MAX_TASKS,
