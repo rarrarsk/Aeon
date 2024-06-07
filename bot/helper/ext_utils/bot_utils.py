@@ -34,7 +34,7 @@ from bot.helper.aeon_utils.tinyfy import tinyfy
 
 if config_dict.get('GDRIVE_ID'):
     commands = [
-        'MirrorCommand',  'QbMirrorCommand', 'LeechCommand', 'QbLeechCommand', 'YtdlCommand', 'YtdlLeechCommand', 
+        'MirrorCommand', 'QbMirrorCommand', 'LeechCommand', 'QbLeechCommand', 'YtdlCommand', 'YtdlLeechCommand', 
         'CloneCommand', 'MediaInfoCommand', 'CountCommand', 'ListCommand', 'SearchCommand', 
         'UserSetCommand', 'StatusCommand', 'StatsCommand', 'StopAllCommand', 
         'HelpCommand', 'BotSetCommand', 'LogCommand', 'RestartCommand'
