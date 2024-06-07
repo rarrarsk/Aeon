@@ -34,7 +34,7 @@ from bot.helper.aeon_utils.tinyfy import tinyfy
 
 if config_dict.get('GDRIVE_ID'):
     commands = [
-        'MirrorCommand', 'LeechCommand', 'YtdlCommand', 'YtdlLeechCommand', 
+        'MirrorCommand',  'QbMirrorCommand', 'LeechCommand', 'QbLeechCommand', 'YtdlCommand', 'YtdlLeechCommand', 
         'CloneCommand', 'MediaInfoCommand', 'CountCommand', 'ListCommand', 'SearchCommand', 
         'UserSetCommand', 'StatusCommand', 'StatsCommand', 'StopAllCommand', 
         'HelpCommand', 'BotSetCommand', 'LogCommand', 'RestartCommand'
@@ -48,7 +48,9 @@ else:
 
 command_descriptions = {
     'MirrorCommand': '- Start mirroring',
+    'QbMirrorCommand': '- Mirror torrent using qBittorrent',
     'LeechCommand': '- Start leeching',
+    'QbLeechCommand': '- Leech torrent using qBittorrent',
     'YtdlCommand': '- Mirror yt-dlp supported link',
     'YtdlLeechCommand': '- Leech through yt-dlp supported link',
     'CloneCommand': '- Copy file/folder to Drive',
@@ -199,7 +201,7 @@ def source(self):
 
 
 def get_readable_message():
-    msg = '<b>Powered by Teamleech</b>\n\n'
+    msg = '<b>Powered by TEAM LEECH</b>\n\n'
     button = None
     tasks = len(download_dict)
     currentTime = get_readable_time(time() - botStartTime)
