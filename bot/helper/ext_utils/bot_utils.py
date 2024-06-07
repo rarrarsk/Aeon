@@ -34,7 +34,7 @@ from bot.helper.aeon_utils.tinyfy import tinyfy
 
 if config_dict.get('GDRIVE_ID'):
     commands = [
-        'MirrorCommand', 'QbMirrorCommand', 'LeechCommand', 'QbLeechCommand', 'YtdlCommand', 'YtdlLeechCommand', 
+        'MirrorCommand', 'LeechCommand', 'YtdlCommand', 'YtdlLeechCommand', 
         'CloneCommand', 'MediaInfoCommand', 'CountCommand', 'ListCommand', 'SearchCommand', 
         'UserSetCommand', 'StatusCommand', 'StatsCommand', 'StopAllCommand', 
         'HelpCommand', 'BotSetCommand', 'LogCommand', 'RestartCommand'
@@ -48,9 +48,7 @@ else:
 
 command_descriptions = {
     'MirrorCommand': '- Start mirroring',
-    'QbMirrorCommand': '- Mirror torrent using qBittorrent',
     'LeechCommand': '- Start leeching',
-    'QbLeechCommand': '- Leech torrent using qBittorrent',
     'YtdlCommand': '- Mirror yt-dlp supported link',
     'YtdlLeechCommand': '- Leech through yt-dlp supported link',
     'CloneCommand': '- Copy file/folder to Drive',
