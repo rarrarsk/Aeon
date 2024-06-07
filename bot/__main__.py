@@ -38,9 +38,7 @@ if config_dict['GDRIVE_ID']:
     help_string = f'''<b>NOTE: Try each command without any arguments to see more details.</b>
 
 <blockquote expandable>/{BotCommands.MirrorCommand[0]} - Start mirroring to Google Drive.
-/{BotCommands.QbMirrorCommand[0]} - Starts mirroring to Google Drive using qBittorrent.
 /{BotCommands.LeechCommand[0]} - Start leeching to Telegram.
-/{BotCommands.QbLeechCommand[0]} - Starts leeching using qBittorrent.
 /{BotCommands.YtdlCommand[0]} - Mirror links supported by yt-dlp.
 /{BotCommands.YtdlLeechCommand[0]} - Leech links supported by yt-dlp.
 /{BotCommands.CloneCommand[0]} - Copy files/folders to Google Drive.
